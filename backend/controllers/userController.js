@@ -166,7 +166,7 @@ const getImage = asyncHandler(async (req, res) => {
 })
 
 const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, {
+  return jwt.sign({ id }, "jkjkjk", {
     expiresIn: '30d',
   })
 }
